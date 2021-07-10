@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Implemented basic player movement.">
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_down.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_down.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_left.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_left.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_right.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_right.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_up.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/green_flash_shirt/green_flash_shirt_idle_up.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ClothSocket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Constants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Constants.cs.meta" afterDir="false" />
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Implemented equiping clothes and dequping them.">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_down.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_down.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_left.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_left.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_right.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_right.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_up.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_up.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_down.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_down.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_left.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_left.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_right.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_right.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_up.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_up.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_down.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_left.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_right.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_up.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/green_flash_shirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Clothes/green_flash_shirt.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/character.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/character.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_down.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_down.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_left.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_left.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_right.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_right.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_up.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_idle_up.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_down.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_down.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_left.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_left.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_right.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_right.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_up.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/character_run_up.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/character.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/green_flash_shirt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/green_flash_shirt.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +62,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ClothScoket.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/AnimationsName.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ClothSocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1v70NI9vslBw8r43UVKHzoYEM8J" />
@@ -109,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
-      <workItem from="1625897910597" duration="8276000" />
+      <workItem from="1625897910597" duration="9117000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -125,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625903801828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented equiping clothes and dequping them.">
+      <created>1625909614565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625909614565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +164,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="imported character animation, tilemaps sprite... Implemented Player Movement." />
     <MESSAGE value="Implemented basic player movement." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented basic player movement." />
+    <MESSAGE value="Implemented equiping clothes and dequping them." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented equiping clothes and dequping them." />
   </component>
 </project>

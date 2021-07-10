@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace LittleSimTest
@@ -5,7 +6,12 @@ namespace LittleSimTest
     public class PlayerController : CharacterController
     {
         [SerializeField] private ClothSocket[] sockets;
-        
+
+        private void OnEnable()
+        {
+            PopulateClothSocket();
+        }
+
         protected override void Update()
         {
             GetInput();
@@ -34,6 +40,11 @@ namespace LittleSimTest
         private void GetInput()
         {
             Direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        }
+
+        private void PopulateClothSocket()
+        {
+            sockets = GetComponentsInChildren<ClothSocket>();
         }
     }
 }
