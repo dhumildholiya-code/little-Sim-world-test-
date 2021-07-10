@@ -1,4 +1,5 @@
-﻿using LittleSimTest.Utils;
+﻿using System;
+using LittleSimTest.Utils;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -19,7 +20,9 @@ namespace LittleSimTest.InventoryLogic
         [SerializeField] private Sprite itemSprite;
         [SerializeField] private AnimationClip[] animationClips;
 
-        public bool IsEquipped { get; set; }
+        private bool _isEquipped;
+
+        public bool IsEquipped => _isEquipped;
         public EquipType Type => type;
         public int Price => price;
         public Sprite Icon => itemSprite;
@@ -27,6 +30,11 @@ namespace LittleSimTest.InventoryLogic
         public AnimationClip[] AnimationClips => animationClips;
 
         public Inventory ParentInventory { private get; set; }
+
+        private void OnEnable()
+        {
+            _isEquipped = false;
+        }
 
         /// <summary>
         /// Buy Item by adding into Inventory.
@@ -54,7 +62,7 @@ namespace LittleSimTest.InventoryLogic
         /// <param name="inventory">Inventory which is interacted with Items</param>
         public void Equip(Inventory inventory)
         {
-            IsEquipped = !IsEquipped;
+            _isEquipped = !_isEquipped;
             inventory.Equip(this, IsEquipped);
             OnEquipItem?.Invoke(this);
         }
