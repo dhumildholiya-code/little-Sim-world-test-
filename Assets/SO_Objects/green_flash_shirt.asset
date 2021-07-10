@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: green_flash_shirt
   m_EditorClassIdentifier: 
   type: 0
+  price: 10
+  itemSprite: {fileID: 0}
   animationClips:
   - {fileID: 7400000, guid: ba3973041d612d64e82a541bbb0f4650, type: 2}
   - {fileID: 7400000, guid: dff468aeff3cf5644873bf5a96e754cb, type: 2}

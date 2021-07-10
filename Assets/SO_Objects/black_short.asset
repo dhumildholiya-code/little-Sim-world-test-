@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: black_short
   m_EditorClassIdentifier: 
   type: 1
+  price: 10
+  itemSprite: {fileID: 0}
   animationClips:
   - {fileID: 7400000, guid: 6d383ba6c0939c2499014fbbb49df8e0, type: 2}
   - {fileID: 7400000, guid: 2e291a3140f561e4ba73eae10f800842, type: 2}

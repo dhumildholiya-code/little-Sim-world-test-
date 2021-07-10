@@ -1,12 +1,24 @@
-using LittleSimTest.SO_Script;
+using LittleSimTest.Interface;
 using UnityEngine;
+using LittleSimTest.InventoryLogic;
+using UnityEditor.Experimental.GraphView;
 
 namespace LittleSimTest
 {
     public class PlayerController : CharacterController
     {
         [SerializeField] private ClothSocket[] sockets;
-        [SerializeField] private ClothItem item;
+        [SerializeField] private LayerMask interactableLayer;
+
+        private Inventory _inventory;
+        private Camera _cam;
+        private Vector2 _mouseWorldPosition;
+
+        private void Start()
+        {
+            _cam = Camera.main;
+            _inventory = new Inventory();
+        }
 
         private void OnEnable()
         {
@@ -42,26 +54,15 @@ namespace LittleSimTest
         {
             Direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-            if (Input.GetKeyDown(KeyCode.I))
+            _mouseWorldPosition = _cam.ScreenToWorldPoint(Input.mousePosition);
+            if (Input.GetMouseButtonDown(0))
             {
-                foreach (var clothSocket in sockets)
-                {
-                    if (clothSocket.type == item.type)
-                    {
-                        clothSocket.Equip(item);
-                    }
-                }
-            }
-
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                foreach (var clothSocket in sockets)
-                {
-                    if (clothSocket.type == item.type)
-                    {
-                        clothSocket.Remove(item);
-                    }
-                }
+                Debug.Log("Hello");
+                Collider2D col = Physics2D.OverlapCircle(_mouseWorldPosition, 0.2f, interactableLayer);
+                if (!col) return;
+                INteractable interactable = col.GetComponent<INteractable>();
+                Debug.Log(interactable.ToString());
+                interactable?.Interact();
             }
         }
 

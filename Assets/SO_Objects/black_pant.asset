@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: black_pant
   m_EditorClassIdentifier: 
   type: 1
+  price: 10
+  itemSprite: {fileID: 0}
   animationClips:
   - {fileID: 7400000, guid: b48733a107730974c814bb36d1682c9c, type: 2}
   - {fileID: 7400000, guid: 4ec34a41d0ee5bf4a8738a9fc2663ba9, type: 2}

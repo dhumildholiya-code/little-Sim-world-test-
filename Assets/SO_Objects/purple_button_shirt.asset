@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: purple_button_shirt
   m_EditorClassIdentifier: 
   type: 0
+  price: 30
+  itemSprite: {fileID: 0}
   animationClips:
   - {fileID: 7400000, guid: f01b5bb9cb5cfcc49961b556e7c7f6ab, type: 2}
   - {fileID: 7400000, guid: 3d3ee75a5d5703343ae2c7ef916fef56, type: 2}

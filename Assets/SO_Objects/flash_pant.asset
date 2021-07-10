@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: flash_pant
   m_EditorClassIdentifier: 
   type: 1
+  price: 50
+  itemSprite: {fileID: 0}
   animationClips:
   - {fileID: 7400000, guid: 1f39b9657567b894bb009eebc45a92a9, type: 2}
   - {fileID: 7400000, guid: d8dab0971e9bd6a4c9e4a395d7e6d879, type: 2}

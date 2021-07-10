@@ -1,4 +1,4 @@
-using LittleSimTest.SO_Script;
+using LittleSimTest.InventoryLogic;
 using LittleSimTest.Utils;
 using UnityEngine;
 
@@ -13,7 +13,7 @@ namespace LittleSimTest
 
     public class ClothSocket : MonoBehaviour
     {
-        [SerializeField] private ClothItem defaultClothItem;
+        [SerializeField] private Item defaultItem;
         public EquipType type;
         
         public Animator MyAnimator { get; set; }
@@ -21,7 +21,7 @@ namespace LittleSimTest
         private SpriteRenderer _spriteRenderer;
         private Animator _parentAnimator;
         private AnimatorOverrideController _animatorOverrideController;
-        private ClothItem _currentClothItem;
+        private Item _currentItem;
 
         private void Awake()
         {
@@ -33,7 +33,7 @@ namespace LittleSimTest
 
             MyAnimator.runtimeAnimatorController = _animatorOverrideController;
 
-            if (defaultClothItem) Equip(defaultClothItem);
+            if (defaultItem) Equip(defaultItem);
         }
 
         public void HandleAnimation(float x, float y)
@@ -52,17 +52,17 @@ namespace LittleSimTest
             MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName), 1);
         }
 
-        public void Equip(ClothItem item)
+        public void Equip(Item item)
         {
             item.Equip(_spriteRenderer, _animatorOverrideController);
-            _currentClothItem = item;
+            _currentItem = item;
         }
 
-        public void Remove(ClothItem item)
+        public void Remove(Item item)
         {
-            item.Remove(_spriteRenderer, _animatorOverrideController);
-            _currentClothItem = null;
-            Equip(defaultClothItem);
+            item.Dequip(_spriteRenderer, _animatorOverrideController);
+            _currentItem = null;
+            Equip(defaultItem);
         }
     }
 }
