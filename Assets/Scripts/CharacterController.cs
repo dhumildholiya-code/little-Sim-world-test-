@@ -13,7 +13,7 @@ namespace LittleSimTest
         private Animator _myAnimator;
 
         protected Vector2 Direction;
-        private bool IsMoving => Direction.x != 0 || Direction.y != 0;
+        protected bool IsMoving => Direction.x != 0 || Direction.y != 0;
 
         protected virtual void Awake()
         {
@@ -36,7 +36,7 @@ namespace LittleSimTest
             _rb.velocity = Direction.normalized * speed;
         }
 
-        private void HandleAnimationLayers()
+        protected virtual void HandleAnimationLayers()
         {
             if (IsMoving)
             {
@@ -51,7 +51,7 @@ namespace LittleSimTest
         }
 
 
-        private void ActivateLayer(string layerName)
+        protected virtual void ActivateLayer(string layerName)
         {
             for (int i = 0; i < _myAnimator.layerCount; i++)
             {
