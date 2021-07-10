@@ -91,7 +91,7 @@ namespace LittleSimTest
 
         private void HandleItemAdded(Item item)
         {
-            Debug.Log($"{this.name} bought {item.name}");
+            // Debug.Log($"{this.name} bought {item.name}");
         }
 
         private void HandleItemEquipped(Item item, bool active)

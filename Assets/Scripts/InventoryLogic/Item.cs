@@ -66,5 +66,11 @@ namespace LittleSimTest.InventoryLogic
             inventory.Equip(this, IsEquipped);
             OnEquipItem?.Invoke(this);
         }
+
+        public void Dequip(Inventory inventory)
+        {
+            _isEquipped = false;
+            OnEquipItem?.Invoke(this);
+        }
     }
 }

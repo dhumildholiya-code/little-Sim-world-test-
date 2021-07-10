@@ -16,7 +16,7 @@ namespace LittleSimTest.ShopSystem
         [SerializeField] private Button closeButton;
 
         private List<Item> _items;
-        private List<ItemUiCard> _itemsUiCards;
+        private List<ItemUiCard> _itemsUiCards = new List<ItemUiCard>();
         private Inventory _interactInventory;
 
         private void Start()
@@ -27,7 +27,6 @@ namespace LittleSimTest.ShopSystem
         public void Init(List<Item> items)
         {
             _items = items;
-            _itemsUiCards = new List<ItemUiCard>();
         }
 
         public void RefreshItems()
@@ -46,7 +45,7 @@ namespace LittleSimTest.ShopSystem
             if (_itemsUiCards == null && _itemsUiCards.Count <= 0) return;
             for (int i = _itemsUiCards.Count - 1; i >= 0; i--)
             {
-                Destroy(_itemsUiCards[i]);
+                Destroy(_itemsUiCards[i].gameObject);
                 _itemsUiCards.RemoveAt(i);
             }
 
@@ -62,6 +61,7 @@ namespace LittleSimTest.ShopSystem
 
         public void Close()
         {
+            DeleteItems();
             gameObject.SetActive(false);
         }
     }

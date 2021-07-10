@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace LittleSimTest.InventoryLogic
@@ -63,13 +64,17 @@ namespace LittleSimTest.InventoryLogic
         /// <param name="active">true for Equip and false for Dequip</param>
         public void Equip(Item item, bool active)
         {
-            if (_items.Contains(item))
+            var sameItemTypeList = _items.Where((x) => x.Type == item.Type).ToList();
+            foreach (var sameTypeItem in sameItemTypeList)
             {
-                OnItemEquipped?.Invoke(item, active);
-            }
-            else
-            {
-                Debug.Log("Item is not in Inventory, Can't Equip");
+                if (item == sameTypeItem)
+                {
+                    OnItemEquipped?.Invoke(item, active);
+                }
+                else
+                {
+                    sameTypeItem.Dequip(this);
+                }
             }
         }
     }
