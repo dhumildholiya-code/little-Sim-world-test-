@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: black_pant_idle_right
+  m_Name: black_short_idle_down
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1901845592933405565, guid: 0673f520dfa2f394f81f83e7ea182c09, type: 3}
+      value: {fileID: -1915703241177809407, guid: f07128ae03ef9804ab1ad8d4be3d6bdf, type: 3}
     - time: 0.083333336
-      value: {fileID: -2301550812183943285, guid: 0673f520dfa2f394f81f83e7ea182c09, type: 3}
+      value: {fileID: 6256300061794460380, guid: f07128ae03ef9804ab1ad8d4be3d6bdf, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1901845592933405565, guid: 0673f520dfa2f394f81f83e7ea182c09, type: 3}
-    - {fileID: -2301550812183943285, guid: 0673f520dfa2f394f81f83e7ea182c09, type: 3}
+    - {fileID: -1915703241177809407, guid: f07128ae03ef9804ab1ad8d4be3d6bdf, type: 3}
+    - {fileID: 6256300061794460380, guid: f07128ae03ef9804ab1ad8d4be3d6bdf, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
