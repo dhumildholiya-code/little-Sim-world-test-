@@ -1,12 +1,16 @@
+using System;
 using LittleSimTest.Interface;
 using UnityEngine;
 using LittleSimTest.InventoryLogic;
-using UnityEditor.Experimental.GraphView;
 
 namespace LittleSimTest
 {
+    /// <summary>
+    /// Handles Player movement and interaction.
+    /// </summary>
     public class PlayerController : CharacterController
     {
+        [SerializeField] private Item[] defaultItems;
         [SerializeField] private ClothSocket[] sockets;
         [SerializeField] private LayerMask interactableLayer;
 
@@ -18,8 +22,17 @@ namespace LittleSimTest
         {
             _cam = Camera.main;
             _inventory = new Inventory();
-        }
+            _inventory.OnItemAdd += HandleItemAdded;
+            _inventory.OnItemRemove += HandleItemRemoved;
+            _inventory.OnItemEquipped += HandleItemEquipped;
 
+            foreach (var defaultItem in defaultItems)
+            {
+                _inventory.AddItem(defaultItem);
+                defaultItem.Equip(_inventory);
+            }
+        }
+        
         private void OnEnable()
         {
             PopulateClothSocket();
@@ -57,18 +70,54 @@ namespace LittleSimTest
             _mouseWorldPosition = _cam.ScreenToWorldPoint(Input.mousePosition);
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Hello");
                 Collider2D col = Physics2D.OverlapCircle(_mouseWorldPosition, 0.2f, interactableLayer);
                 if (!col) return;
-                INteractable interactable = col.GetComponent<INteractable>();
+                INventoryINteractable interactable = col.GetComponent<INventoryINteractable>();
                 Debug.Log(interactable.ToString());
-                interactable?.Interact();
+                interactable?.Interact(_inventory);
+            }
+        }
+        
+        private void HandleItemRemoved(Item item)
+        {
+            foreach (var clothSocket in sockets)
+            {
+                if (clothSocket.type == item.Type)
+                {
+                    clothSocket.Remove();
+                }
+            }
+        }
+
+        private void HandleItemAdded(Item item)
+        {
+            Debug.Log($"{this.name} bought {item.name}");
+        }
+
+        private void HandleItemEquipped(Item item, bool active)
+        {
+            foreach (var clothSocket in sockets)
+            {
+                if (clothSocket.type == item.Type)
+                {
+                    if(active)
+                        clothSocket.Equip(item);
+                    else
+                        clothSocket.Remove();
+                }
             }
         }
 
         private void PopulateClothSocket()
         {
             sockets = GetComponentsInChildren<ClothSocket>();
+        }
+
+        private void OnDestroy()
+        {
+            _inventory.OnItemAdd -= HandleItemAdded;
+            _inventory.OnItemRemove -= HandleItemRemoved;
+            _inventory.OnItemEquipped -= HandleItemEquipped;
         }
     }
 }

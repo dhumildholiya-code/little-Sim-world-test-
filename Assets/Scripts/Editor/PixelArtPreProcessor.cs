@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace LittleSimTest.Editor
 {
+    /// <summary>
+    /// Handles Pixel art Spritesheet import settings.
+    /// </summary>
     public class PixelArtPreProcessor : AssetPostprocessor
     {
         private const string AssetPathStartsWith = "Assets/Sprites/Clothes/";

@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using LittleSimTest.Interface;
 using LittleSimTest.InventoryLogic;
 using UnityEngine;
 
 namespace LittleSimTest.ShopSystem
 {
-    public class Shop : MonoBehaviour, INteractable
+    /// <summary>
+    /// Handles Interaction between Player and ShopUI.
+    /// Store Items present in shop.
+    /// </summary>
+    public class Shop : MonoBehaviour, INventoryINteractable
     {
         [SerializeField]
         private List<Item> items;
@@ -18,9 +21,9 @@ namespace LittleSimTest.ShopSystem
             shopUI.Init(items);
         }
 
-        public void Interact()
+        public void Interact(Inventory interactedInventory)
         {
-            shopUI.Open();
+            shopUI.Open(interactedInventory);
         }
     }
 }

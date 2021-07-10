@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace LittleSimTest
 {
+    /// <summary>
+    /// Handles core Movement logic and Aniamtion for any character.
+    /// </summary>
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Animator))]
     public abstract class CharacterController : MonoBehaviour

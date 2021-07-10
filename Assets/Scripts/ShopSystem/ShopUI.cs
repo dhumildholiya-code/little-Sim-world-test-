@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 namespace LittleSimTest.ShopSystem
 {
+    /// <summary>
+    /// Shows visual presentation of shop and its items.
+    /// </summary>
     public class ShopUI : MonoBehaviour
     {
         [SerializeField] private Transform container;
@@ -14,6 +17,7 @@ namespace LittleSimTest.ShopSystem
 
         private List<Item> _items;
         private List<ItemUiCard> _itemsUiCards;
+        private Inventory _interactInventory;
 
         private void Start()
         {
@@ -32,7 +36,7 @@ namespace LittleSimTest.ShopSystem
             foreach (var item in _items)
             {
                 ItemUiCard itemUiCard = Instantiate(itemCardPrefab, container);
-                itemUiCard.Init(item);
+                itemUiCard.Init(item, _interactInventory);
                 _itemsUiCards.Add(itemUiCard);
             }
         }
@@ -49,8 +53,9 @@ namespace LittleSimTest.ShopSystem
             _itemsUiCards.Clear();
         }
 
-        public void Open()
+        public void Open(Inventory inventory)
         {
+            _interactInventory = inventory;
             gameObject.SetActive(true);
             RefreshItems();
         }

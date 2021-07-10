@@ -1,54 +1,62 @@
 ﻿using LittleSimTest.Utils;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace LittleSimTest.InventoryLogic
 {
+    /// <summary>
+    /// Item Class which store information and functionalities for item.
+    /// </summary>
     [CreateAssetMenu(menuName = "Item", fileName = "Item", order = 1)]
     public class Item : ScriptableObject
     {
+        public event System.Action<Item> OnBuyItem;
+        public event System.Action<Item> OnSellItem;
+        public event System.Action<Item> OnEquipItem;
+
         [SerializeField] private EquipType type;
-        [SerializeField]private int price;
+        [SerializeField] private int price;
         [SerializeField] private Sprite itemSprite;
         [SerializeField] private AnimationClip[] animationClips;
 
+        public bool IsEquipped { get; set; }
         public EquipType Type => type;
         public int Price => price;
         public Sprite Icon => itemSprite;
+        public bool IsOwned => ParentInventory != null;
+        public AnimationClip[] AnimationClips => animationClips;
 
         public Inventory ParentInventory { private get; set; }
 
-        public void Buy()
+        /// <summary>
+        /// Buy Item by adding into Inventory.
+        /// </summary>
+        /// <param name="inventory">Inventory which is interacted with Items</param>
+        public void Buy(Inventory inventory)
         {
-            
+            inventory.AddItem(this);
+            OnBuyItem?.Invoke(this);
         }
 
-        public void Sell()
+        /// <summary>
+        /// Sell Item by Removing from Inventory
+        /// </summary>
+        /// <param name="inventory">Inventory which is interacted with Items</param>
+        public void Sell(Inventory inventory)
         {
-            
+            inventory.Remove(this);
+            OnSellItem?.Invoke(this);
         }
 
-        public void Equip(SpriteRenderer spriteRenderer, AnimatorOverrideController animatorOverrideController)
+        /// <summary>
+        /// Equip item
+        /// </summary>
+        /// <param name="inventory">Inventory which is interacted with Items</param>
+        public void Equip(Inventory inventory)
         {
-            spriteRenderer.color = Color.white;
-
-            var clipNames = Constants.OverrideAnimationsName;
-            for (var i = 0; i < clipNames.Length; i++)
-            {
-                animatorOverrideController[clipNames[i]] = animationClips[i];
-            }
-        }
-
-        public void Dequip(SpriteRenderer spriteRenderer, AnimatorOverrideController animatorOverrideController)
-        {
-            var clipNames = Constants.OverrideAnimationsName;
-            foreach (var clip in clipNames)
-            {
-                animatorOverrideController[clip] = null;
-            }
-
-            var c = spriteRenderer.color;
-            c.a = 0;
-            spriteRenderer.color = c;
+            IsEquipped = !IsEquipped;
+            inventory.Equip(this, IsEquipped);
+            OnEquipItem?.Invoke(this);
         }
     }
 }

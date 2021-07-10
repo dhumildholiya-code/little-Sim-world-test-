@@ -11,17 +11,18 @@ namespace LittleSimTest
         Leg,
     }
 
+    /// <summary>
+    /// Handle cloth animation and Equip and UnEquip of Clothes on player.
+    /// </summary>
     public class ClothSocket : MonoBehaviour
     {
-        [SerializeField] private Item defaultItem;
         public EquipType type;
-        
+
         public Animator MyAnimator { get; set; }
 
         private SpriteRenderer _spriteRenderer;
         private Animator _parentAnimator;
         private AnimatorOverrideController _animatorOverrideController;
-        private Item _currentItem;
 
         private void Awake()
         {
@@ -32,8 +33,6 @@ namespace LittleSimTest
             _animatorOverrideController = new AnimatorOverrideController(MyAnimator.runtimeAnimatorController);
 
             MyAnimator.runtimeAnimatorController = _animatorOverrideController;
-
-            if (defaultItem) Equip(defaultItem);
         }
 
         public void HandleAnimation(float x, float y)
@@ -54,15 +53,26 @@ namespace LittleSimTest
 
         public void Equip(Item item)
         {
-            item.Equip(_spriteRenderer, _animatorOverrideController);
-            _currentItem = item;
+            _spriteRenderer.color = Color.white;
+
+            var clipNames = Constants.OverrideAnimationsName;
+            for (var i = 0; i < clipNames.Length; i++)
+            {
+                _animatorOverrideController[clipNames[i]] = item.AnimationClips[i];
+            }
         }
 
-        public void Remove(Item item)
+        public void Remove()
         {
-            item.Dequip(_spriteRenderer, _animatorOverrideController);
-            _currentItem = null;
-            Equip(defaultItem);
+            var clipNames = Constants.OverrideAnimationsName;
+            foreach (var clip in clipNames)
+            {
+                _animatorOverrideController[clip] = null;
+            }
+
+            var c = _spriteRenderer.color;
+            c.a = 0;
+            _spriteRenderer.color = c;
         }
     }
 }

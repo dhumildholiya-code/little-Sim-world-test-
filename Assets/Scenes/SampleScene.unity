@@ -239,7 +239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3ac2413b0eab4eb8d4ead34970528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultItem: {fileID: 11400000, guid: d4b30e1860893544090204ef28873faa, type: 2}
   type: 0
 --- !u!1 &409433789
 GameObject:
@@ -3974,7 +3973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3ac2413b0eab4eb8d4ead34970528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultItem: {fileID: 11400000, guid: be6c065cc4bae504e8d1cb4acc49e69a, type: 2}
   type: 1
 --- !u!95 &1371995186
 Animator:
@@ -4345,6 +4343,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  defaultItems:
+  - {fileID: 11400000, guid: d4b30e1860893544090204ef28873faa, type: 2}
+  - {fileID: 11400000, guid: be6c065cc4bae504e8d1cb4acc49e69a, type: 2}
   sockets:
   - {fileID: 318412062}
   - {fileID: 1371995185}
