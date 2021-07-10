@@ -2614,14 +2614,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationClips:
-  - {fileID: 7400000, guid: 6d383ba6c0939c2499014fbbb49df8e0, type: 2}
-  - {fileID: 7400000, guid: 2e291a3140f561e4ba73eae10f800842, type: 2}
-  - {fileID: 7400000, guid: d09f384c7efb4c54a9fcf4a03cf19d3a, type: 2}
-  - {fileID: 7400000, guid: 509db8c171288044bb4d6024453e4e6a, type: 2}
-  - {fileID: 7400000, guid: a9151c6191c49764ca4340555d3dfec4, type: 2}
-  - {fileID: 7400000, guid: ad64c2861ad04d64591b9e717c878eb4, type: 2}
-  - {fileID: 7400000, guid: 229d13e3af32ca442b770fcc4b9af671, type: 2}
-  - {fileID: 7400000, guid: 55477e92d1a9f554e9d384b5759602e3, type: 2}
+  - {fileID: 7400000, guid: 1f39b9657567b894bb009eebc45a92a9, type: 2}
+  - {fileID: 7400000, guid: d8dab0971e9bd6a4c9e4a395d7e6d879, type: 2}
+  - {fileID: 7400000, guid: a0c2f15330f6000459afe8d4d79bfa24, type: 2}
+  - {fileID: 7400000, guid: 4feacd112eadd974fb2c00b54632640d, type: 2}
+  - {fileID: 7400000, guid: 9c08c70c4df1f3a4aa3cb1a16e20f82a, type: 2}
+  - {fileID: 7400000, guid: 5f3d32bf7a2d2f4449f42166fede09bc, type: 2}
+  - {fileID: 7400000, guid: 2884a8e9b24e62743b23918cfa552fcd, type: 2}
+  - {fileID: 7400000, guid: b42cf09667de9f04cac886a83f8c628b, type: 2}
 --- !u!95 &1371995186
 Animator:
   serializedVersion: 3

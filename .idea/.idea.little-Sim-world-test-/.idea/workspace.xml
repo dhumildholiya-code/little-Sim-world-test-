@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Added pant spritesheet.">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PixelArtPreProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PixelArtPreProcessor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_down.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_down.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_left.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_left.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_right.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_right.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_up.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_idle_up.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_down.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_down.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_left.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_left.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_right.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_right.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_up.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/black_pant/black_pant_run_up.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_down.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_left.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_right.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Clothes/Black Pant/black_pant_up.png.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Implemented AssetPostProcessor for importing pixel art spritesheet. and imported more clothes spritesheet." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
-      <workItem from="1625897910597" duration="10226000" />
+      <workItem from="1625897910597" duration="10415000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -138,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625911351988</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented AssetPostProcessor for importing pixel art spritesheet. and imported more clothes spritesheet.">
+      <created>1625915709588</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625915709588</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +142,7 @@
     <MESSAGE value="Implemented basic player movement." />
     <MESSAGE value="Implemented equiping clothes and dequping them." />
     <MESSAGE value="Added pant spritesheet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pant spritesheet." />
+    <MESSAGE value="Implemented AssetPostProcessor for importing pixel art spritesheet. and imported more clothes spritesheet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented AssetPostProcessor for importing pixel art spritesheet. and imported more clothes spritesheet." />
   </component>
 </project>
