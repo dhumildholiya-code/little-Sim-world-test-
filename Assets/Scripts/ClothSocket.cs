@@ -1,16 +1,27 @@
+using LittleSimTest.SO_Script;
 using LittleSimTest.Utils;
 using UnityEngine;
 
 namespace LittleSimTest
 {
+    [System.Serializable]
+    public enum EquipType
+    {
+        Body,
+        Leg,
+    }
+
     public class ClothSocket : MonoBehaviour
     {
-        [SerializeField] private AnimationClip[] animationClips;
+        [SerializeField] private ClothItem defaultClothItem;
+        public EquipType type;
+        
         public Animator MyAnimator { get; set; }
 
         private SpriteRenderer _spriteRenderer;
         private Animator _parentAnimator;
         private AnimatorOverrideController _animatorOverrideController;
+        private ClothItem _currentClothItem;
 
         private void Awake()
         {
@@ -21,19 +32,8 @@ namespace LittleSimTest
             _animatorOverrideController = new AnimatorOverrideController(MyAnimator.runtimeAnimatorController);
 
             MyAnimator.runtimeAnimatorController = _animatorOverrideController;
-        }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.I))
-            {
-                Equip(animationClips);
-            }
-
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                Dequip();
-            }
+            if (defaultClothItem) Equip(defaultClothItem);
         }
 
         public void HandleAnimation(float x, float y)
@@ -52,28 +52,17 @@ namespace LittleSimTest
             MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName), 1);
         }
 
-        private void Equip(AnimationClip[] clips)
+        public void Equip(ClothItem item)
         {
-            _spriteRenderer.color = Color.white;
-            
-            var clipNames = Constants.OverrideAnimationsName;
-            for (int i = 0; i < clipNames.Length; i++)
-            {
-                _animatorOverrideController[clipNames[i]] = clips[i];
-            }
+            item.Equip(_spriteRenderer, _animatorOverrideController);
+            _currentClothItem = item;
         }
 
-        private void Dequip()
+        public void Remove(ClothItem item)
         {
-            var clipNames = Constants.OverrideAnimationsName;
-            for (int i = 0; i < clipNames.Length; i++)
-            {
-                _animatorOverrideController[clipNames[i]] = null;
-            }
-
-            var c = _spriteRenderer.color;
-            c.a = 0;
-            _spriteRenderer.color = c;
+            item.Remove(_spriteRenderer, _animatorOverrideController);
+            _currentClothItem = null;
+            Equip(defaultClothItem);
         }
     }
 }

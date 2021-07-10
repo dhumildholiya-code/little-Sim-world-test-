@@ -1,4 +1,4 @@
-using System;
+using LittleSimTest.SO_Script;
 using UnityEngine;
 
 namespace LittleSimTest
@@ -6,6 +6,7 @@ namespace LittleSimTest
     public class PlayerController : CharacterController
     {
         [SerializeField] private ClothSocket[] sockets;
+        [SerializeField] private ClothItem item;
 
         private void OnEnable()
         {
@@ -40,6 +41,28 @@ namespace LittleSimTest
         private void GetInput()
         {
             Direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                foreach (var clothSocket in sockets)
+                {
+                    if (clothSocket.type == item.type)
+                    {
+                        clothSocket.Equip(item);
+                    }
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                foreach (var clothSocket in sockets)
+                {
+                    if (clothSocket.type == item.type)
+                    {
+                        clothSocket.Remove(item);
+                    }
+                }
+            }
         }
 
         private void PopulateClothSocket()

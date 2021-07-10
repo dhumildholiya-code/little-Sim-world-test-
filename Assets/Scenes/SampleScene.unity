@@ -239,15 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3ac2413b0eab4eb8d4ead34970528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationClips:
-  - {fileID: 7400000, guid: ba3973041d612d64e82a541bbb0f4650, type: 2}
-  - {fileID: 7400000, guid: dff468aeff3cf5644873bf5a96e754cb, type: 2}
-  - {fileID: 7400000, guid: 4edfd207643c02a4f83763ed9f037b6c, type: 2}
-  - {fileID: 7400000, guid: 50de81cbba4aafe4c95eb46f045c33dc, type: 2}
-  - {fileID: 7400000, guid: 55547d7b233f9a943973dca8b10920d3, type: 2}
-  - {fileID: 7400000, guid: 470b729458702474f99ca57fb51adb10, type: 2}
-  - {fileID: 7400000, guid: d221fb4258afef248b592db5fb133a75, type: 2}
-  - {fileID: 7400000, guid: 864e29be4533da74995bf19b9c924820, type: 2}
+  defaultClothItem: {fileID: 11400000, guid: d4b30e1860893544090204ef28873faa, type: 2}
+  type: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,15 +2606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3ac2413b0eab4eb8d4ead34970528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationClips:
-  - {fileID: 7400000, guid: 1f39b9657567b894bb009eebc45a92a9, type: 2}
-  - {fileID: 7400000, guid: d8dab0971e9bd6a4c9e4a395d7e6d879, type: 2}
-  - {fileID: 7400000, guid: a0c2f15330f6000459afe8d4d79bfa24, type: 2}
-  - {fileID: 7400000, guid: 4feacd112eadd974fb2c00b54632640d, type: 2}
-  - {fileID: 7400000, guid: 9c08c70c4df1f3a4aa3cb1a16e20f82a, type: 2}
-  - {fileID: 7400000, guid: 5f3d32bf7a2d2f4449f42166fede09bc, type: 2}
-  - {fileID: 7400000, guid: 2884a8e9b24e62743b23918cfa552fcd, type: 2}
-  - {fileID: 7400000, guid: b42cf09667de9f04cac886a83f8c628b, type: 2}
+  defaultClothItem: {fileID: 11400000, guid: e25d33b527b07d04784cbb98f4755524, type: 2}
+  type: 1
 --- !u!95 &1371995186
 Animator:
   serializedVersion: 3
@@ -2836,3 +2822,5 @@ MonoBehaviour:
   speed: 5
   sockets:
   - {fileID: 318412062}
+  - {fileID: 1371995185}
+  item: {fileID: 11400000, guid: d4b30e1860893544090204ef28873faa, type: 2}

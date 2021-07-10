@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
+  m_Name: green_flash_shirt
+  m_EditorClassIdentifier: 
+  type: 0
+  animationClips:
+  - {fileID: 7400000, guid: ba3973041d612d64e82a541bbb0f4650, type: 2}
+  - {fileID: 7400000, guid: dff468aeff3cf5644873bf5a96e754cb, type: 2}
+  - {fileID: 7400000, guid: 4edfd207643c02a4f83763ed9f037b6c, type: 2}
+  - {fileID: 7400000, guid: 50de81cbba4aafe4c95eb46f045c33dc, type: 2}
+  - {fileID: 7400000, guid: 55547d7b233f9a943973dca8b10920d3, type: 2}
+  - {fileID: 7400000, guid: 470b729458702474f99ca57fb51adb10, type: 2}
+  - {fileID: 7400000, guid: d221fb4258afef248b592db5fb133a75, type: 2}
+  - {fileID: 7400000, guid: 864e29be4533da74995bf19b9c924820, type: 2}

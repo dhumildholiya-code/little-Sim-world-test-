@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
+  m_Name: purple_button_shirt
+  m_EditorClassIdentifier: 
+  type: 0
+  animationClips:
+  - {fileID: 7400000, guid: f01b5bb9cb5cfcc49961b556e7c7f6ab, type: 2}
+  - {fileID: 7400000, guid: 3d3ee75a5d5703343ae2c7ef916fef56, type: 2}
+  - {fileID: 7400000, guid: ef75fa84b2946b5499eaa880c367b5b0, type: 2}
+  - {fileID: 7400000, guid: b95329caa8a0ebb47a83c0d16088916c, type: 2}
+  - {fileID: 7400000, guid: ae598ab7a3dbac94cb44751eccb9eda6, type: 2}
+  - {fileID: 7400000, guid: 6b087cd5a4a49b14a95817a1311a9887, type: 2}
+  - {fileID: 7400000, guid: f00efcce43e942d4cb8f2f436ab8cbcc, type: 2}
+  - {fileID: 7400000, guid: b78ac82a219c7664096798cbb663c006, type: 2}

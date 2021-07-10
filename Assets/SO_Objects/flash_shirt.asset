@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
+  m_Name: flash_shirt
+  m_EditorClassIdentifier: 
+  type: 0
+  animationClips:
+  - {fileID: 7400000, guid: 078df08b73c7224478dc069811614ba3, type: 2}
+  - {fileID: 7400000, guid: b1cab490923f707439e76f246b059983, type: 2}
+  - {fileID: 7400000, guid: be7b089a7aa25234da06e9e92682d090, type: 2}
+  - {fileID: 7400000, guid: 933f4cb996d6910498dc3420bee4fc9b, type: 2}
+  - {fileID: 7400000, guid: cdc8db7c61cd7054fa17b2602eaaf4d2, type: 2}
+  - {fileID: 7400000, guid: 87d4f41e997fb4c4bb31a4c0af47f091, type: 2}
+  - {fileID: 7400000, guid: 00fc737ace28ecc4e8584f78dd39e6ef, type: 2}
+  - {fileID: 7400000, guid: b03be427aa5bf5d44a35c826198d1eea, type: 2}

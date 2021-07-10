@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
+  m_Name: black_short
+  m_EditorClassIdentifier: 
+  type: 1
+  animationClips:
+  - {fileID: 7400000, guid: 6d383ba6c0939c2499014fbbb49df8e0, type: 2}
+  - {fileID: 7400000, guid: 2e291a3140f561e4ba73eae10f800842, type: 2}
+  - {fileID: 7400000, guid: d09f384c7efb4c54a9fcf4a03cf19d3a, type: 2}
+  - {fileID: 7400000, guid: 509db8c171288044bb4d6024453e4e6a, type: 2}
+  - {fileID: 7400000, guid: a9151c6191c49764ca4340555d3dfec4, type: 2}
+  - {fileID: 7400000, guid: ad64c2861ad04d64591b9e717c878eb4, type: 2}
+  - {fileID: 7400000, guid: 229d13e3af32ca442b770fcc4b9af671, type: 2}
+  - {fileID: 7400000, guid: 55477e92d1a9f554e9d384b5759602e3, type: 2}
