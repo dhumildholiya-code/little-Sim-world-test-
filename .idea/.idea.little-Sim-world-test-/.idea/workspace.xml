@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="added bg music">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SoundSystem/SoundManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SoundSystem/SoundManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/Cloth-Fabric-Blanket-Shake-A2-www.fesliyanstudios.com.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/Cloth-Fabric-Blanket-Shake-A2-www.fesliyanstudios.com.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/confirmation_002.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/confirmation_002.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/open_001.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/open_001.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/select_002.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sound/Sound Effects/select_002.ogg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item Ui Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Item Ui Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DilogueSystem/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DilogueSystem/DialogueController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DilogueSystem/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DilogueSystem/DialogueUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ItemUiCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ItemUiCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ShopUI.cs" afterDir="false" />
-    </list>
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Added sound Effects and fixed minor bugs." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +119,7 @@
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
       <workItem from="1625897910597" duration="15745000" />
-      <workItem from="1625925503900" duration="21007000" />
+      <workItem from="1625925503900" duration="21633000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -245,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625977862628</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added sound Effects and fixed minor bugs.">
+      <created>1625983294877</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1625983294877</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +271,7 @@
     <MESSAGE value="Imported fonts and complete basic dialogue system." />
     <MESSAGE value="Implemented NPC" />
     <MESSAGE value="added bg music" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bg music" />
+    <MESSAGE value="Added sound Effects and fixed minor bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sound Effects and fixed minor bugs." />
   </component>
 </project>
