@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
   m_Name: Orange Pant
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   price: 60
   itemSprite: {fileID: 5431575428400800389, guid: 0f75194bcd890684da3695734cbf19a4, type: 3}
   animationClips:

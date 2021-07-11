@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Fixed One issue" />
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Created Multiple NPC with different clothes">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ExitMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ExitMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SO_Objects/Orange Pant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SO_Objects/Orange Pant.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +31,7 @@
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ExitMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ShopSystem/ShopUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ClothSocket.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridPaintPaletteClipboard.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,6 +74,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/DilogueSystem/DialogueController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DilogueSystem/DialogueUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoundSystem/SoundManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ExitMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1v70NI9vslBw8r43UVKHzoYEM8J" />
@@ -88,6 +96,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Little Sim Worl - Test.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\NextGen_Studio\My prototypes\little-Sim-world-test-\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -119,7 +135,7 @@
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
       <workItem from="1625897910597" duration="15745000" />
-      <workItem from="1625925503900" duration="22153000" />
+      <workItem from="1625925503900" duration="23196000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -240,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625983332361</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Created Multiple NPC with different clothes">
+      <created>1625983839225</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1625983839225</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +303,7 @@
     <MESSAGE value="added bg music" />
     <MESSAGE value="Added sound Effects and fixed minor bugs." />
     <MESSAGE value="Fixed One issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed One issue" />
+    <MESSAGE value="Created Multiple NPC with different clothes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Multiple NPC with different clothes" />
   </component>
 </project>
