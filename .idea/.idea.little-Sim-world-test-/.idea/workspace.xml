@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="final level design fixes." />
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="collider fixes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +135,7 @@
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
       <workItem from="1625897910597" duration="15745000" />
-      <workItem from="1625925503900" duration="27643000" />
+      <workItem from="1625925503900" duration="27784000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -305,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625990325342</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="collide fixes">
+      <created>1625990441837</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1625990441837</updated>
+    </task>
+    <task id="LOCAL-00026" summary="collider fixes.">
+      <created>1625990467999</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1625990467999</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +342,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="imported character animation, tilemaps sprite... Implemented Player Movement." />
     <MESSAGE value="Implemented basic player movement." />
     <MESSAGE value="Implemented equiping clothes and dequping them." />
     <MESSAGE value="Added pant spritesheet." />
@@ -352,6 +365,8 @@
     <MESSAGE value="added Documentatiion pdf." />
     <MESSAGE value="change level design." />
     <MESSAGE value="final level design fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="final level design fixes." />
+    <MESSAGE value="collide fixes" />
+    <MESSAGE value="collider fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="collider fixes." />
   </component>
 </project>
