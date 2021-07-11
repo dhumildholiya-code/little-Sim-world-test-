@@ -982,7 +982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.51, y: 5.61, z: -10}
+  m_LocalPosition: {x: -9.86, y: 5.61, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51216,7 +51216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715178683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.51, y: 5.61, z: -10}
+  m_LocalPosition: {x: -9.86, y: 5.61, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 678915302}
@@ -79424,7 +79424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2728816871380097576, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
       propertyPath: m_Name
-      value: NPC (1)
+      value: Clalvin Klein
       objectReference: {fileID: 0}
     - target: {fileID: 2728816871380097577, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
       propertyPath: m_RootOrder
@@ -79474,6 +79474,38 @@ PrefabInstance:
       propertyPath: shopUI
       value: 
       objectReference: {fileID: 1126671869}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d596ff91ff9a2d94980bf22b02f3f263, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: a9313dcb4fefad748905b52caeae60f1, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: e2785ab0e4ea1ca4a9a692585f640448, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: e25d33b527b07d04784cbb98f4755524, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: d4b30e1860893544090204ef28873faa, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: e2785ab0e4ea1ca4a9a692585f640448, type: 2}
+    - target: {fileID: 2728816871380097583, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: fc381687678ab9449a906f1918ace743, type: 2}
     - target: {fileID: 2728816871942085352, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
       propertyPath: m_Camera
       value: 
@@ -79549,7 +79581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137612434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.51, y: 5.61, z: 0}
+  m_LocalPosition: {x: -9.86, y: 5.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 318412059}
@@ -79808,7 +79840,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2728816871380097576, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: Giorgio Armani
       objectReference: {fileID: 0}
     - target: {fileID: 2728816871380097577, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
       propertyPath: m_RootOrder
@@ -79858,6 +79890,26 @@ PrefabInstance:
       propertyPath: shopUI
       value: 
       objectReference: {fileID: 1126671869}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: d4b30e1860893544090204ef28873faa, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e27ff4228057974f8f101f3463b1664, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: e2785ab0e4ea1ca4a9a692585f640448, type: 2}
+    - target: {fileID: 2728816871380097581, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
+      propertyPath: items.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: e2785ab0e4ea1ca4a9a692585f640448, type: 2}
     - target: {fileID: 2728816871942085352, guid: db02af4dffd66c248b4f7e7f049a4924, type: 3}
       propertyPath: m_Camera
       value: 
