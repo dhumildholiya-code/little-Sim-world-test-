@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using LittleSimTest.SoundSystem;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -30,6 +31,7 @@ namespace LittleSimTest.DilogueSystem
         {
             _sentences.Clear();
             
+            SoundManager.Instance.PlayOpenSound();
             dialogueUI.gameObject.SetActive(true);
             dialogueUI.SetName(dialogue.characterName);
             dialogueUI.HandleContinueButton(_continueAction);
@@ -56,6 +58,7 @@ namespace LittleSimTest.DilogueSystem
 
         private void EndDialogue()
         {
+            SoundManager.Instance.PlayOpenSound();
             dialogueUI.gameObject.SetActive(false);
             OnEndDialogue?.Invoke();
         }

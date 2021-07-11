@@ -1,5 +1,6 @@
 ﻿using System;
 using LittleSimTest.InventoryLogic;
+using LittleSimTest.SoundSystem;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,9 +20,13 @@ namespace LittleSimTest.ShopSystem
         [SerializeField] private Button sellButton;
         [SerializeField] private Button equipButton;
         [SerializeField] private TextMeshProUGUI equipButtonText;
-        
+
         private Item _item;
         private Inventory _interactedInventory;
+
+        private const string Owned = "Owned";
+        private const string Equip = "Equip";
+        private const string UnEquip = "UnEquip";
 
         public void Init(Item item, Inventory interactionInventory)
         {
@@ -30,8 +35,11 @@ namespace LittleSimTest.ShopSystem
             UpdateUI();
 
             buyButton.onClick.AddListener(() => _item.Buy(_interactedInventory));
-            sellButton.onClick.AddListener(()=>_item.Sell(_interactedInventory));
-            equipButton.onClick.AddListener(()=> _item.Equip(_interactedInventory));
+            buyButton.onClick.AddListener(PlayButtonClickSound);
+            sellButton.onClick.AddListener(() => _item.Sell(_interactedInventory));
+            sellButton.onClick.AddListener(PlayButtonClickSound);
+            equipButton.onClick.AddListener(() => _item.Equip(_interactedInventory));
+            equipButton.onClick.AddListener(PlayButtonClickSound);
 
             _item.OnBuyItem += HandleBuyItem;
             _item.OnSellItem += HandleSellItem;
@@ -42,7 +50,7 @@ namespace LittleSimTest.ShopSystem
         {
             if (_item == item)
             {
-                ownedText.text = _item.IsOwned ? "Owned" : "";
+                ownedText.text = _item.IsOwned ? Owned : string.Empty;
                 DisableAllActionButtons();
                 buyButton.gameObject.SetActive(true);
             }
@@ -52,7 +60,7 @@ namespace LittleSimTest.ShopSystem
         {
             if (_item == item)
             {
-                equipButtonText.text = _item.IsEquipped ? "UnEquip" : "Equip";
+                equipButtonText.text = _item.IsEquipped ? UnEquip : Equip;
             }
         }
 
@@ -60,7 +68,7 @@ namespace LittleSimTest.ShopSystem
         {
             if (_item == item)
             {
-                ownedText.text = _item.IsOwned ? "Owned" : "";
+                ownedText.text = _item.IsOwned ? Owned : string.Empty;
                 DisableAllActionButtons();
                 equipButton.gameObject.SetActive(true);
                 sellButton.gameObject.SetActive(true);
@@ -71,10 +79,10 @@ namespace LittleSimTest.ShopSystem
         {
             iconImage.sprite = _item.Icon;
             nameText.text = _item.name;
-            priceText.text = $"Price : {_item.Price}";
-            ownedText.text = _item.IsOwned ? "Owned" : "";
+            priceText.text = $"Price : {_item.Price} $";
+            ownedText.text = _item.IsOwned ? Owned : string.Empty;
             equipButton.gameObject.SetActive(_item.IsOwned);
-            equipButtonText.text = _item.IsEquipped ? "Unequip" : "Equip";
+            equipButtonText.text = _item.IsEquipped ? UnEquip : Equip;
             sellButton.gameObject.SetActive(_item.IsOwned);
             buyButton.gameObject.SetActive(!_item.IsOwned);
         }
@@ -84,6 +92,11 @@ namespace LittleSimTest.ShopSystem
             equipButton.gameObject.SetActive(false);
             sellButton.gameObject.SetActive(false);
             buyButton.gameObject.SetActive(false);
+        }
+
+        private void PlayButtonClickSound()
+        {
+            SoundManager.Instance.PlayButtonClickSound();
         }
 
         private void OnDestroy()

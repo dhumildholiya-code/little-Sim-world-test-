@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
+  m_Name: Orange Pant
+  m_EditorClassIdentifier: 
+  type: 0
+  price: 60
+  itemSprite: {fileID: 5431575428400800389, guid: 0f75194bcd890684da3695734cbf19a4, type: 3}
+  animationClips:
+  - {fileID: 7400000, guid: bab90d1ca6a15d74a9148dba8a3d24d8, type: 2}
+  - {fileID: 7400000, guid: 3132be6c326aab84480098abccac4b14, type: 2}
+  - {fileID: 7400000, guid: de57ac78e2b9ae54ab740936f344b31f, type: 2}
+  - {fileID: 7400000, guid: 71012dd2324690545826ab284dcfeba0, type: 2}
+  - {fileID: 7400000, guid: 1471d608601b25d4b8066b8cf7b28ffb, type: 2}
+  - {fileID: 7400000, guid: bd0106bcc76793743acb3fa9fcf98ed8, type: 2}
+  - {fileID: 7400000, guid: 7839cc28fe2d0c943b016c7de06cbc2d, type: 2}
+  - {fileID: 7400000, guid: 4b7886edea9e5724a879491fc5115b93, type: 2}

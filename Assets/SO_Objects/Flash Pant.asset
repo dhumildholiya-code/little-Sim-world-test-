@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
-  m_Name: flash_pant
+  m_Name: Flash Pant
   m_EditorClassIdentifier: 
   type: 1
   price: 50
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 3275806775021635905, guid: 0f75194bcd890684da3695734cbf19a4, type: 3}
   animationClips:
   - {fileID: 7400000, guid: 1f39b9657567b894bb009eebc45a92a9, type: 2}
   - {fileID: 7400000, guid: d8dab0971e9bd6a4c9e4a395d7e6d879, type: 2}

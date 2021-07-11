@@ -2,6 +2,7 @@ using System;
 using LittleSimTest.Interface;
 using UnityEngine;
 using LittleSimTest.InventoryLogic;
+using LittleSimTest.SoundSystem;
 
 namespace LittleSimTest
 {
@@ -79,6 +80,7 @@ namespace LittleSimTest
         
         private void HandleItemRemoved(Item item)
         {
+            SoundManager.Instance.PlayConfirmSound();
             foreach (var clothSocket in sockets)
             {
                 if (clothSocket.type == item.Type)
@@ -91,6 +93,7 @@ namespace LittleSimTest
         private void HandleItemAdded(Item item)
         {
             // Debug.Log($"{this.name} bought {item.name}");
+            SoundManager.Instance.PlayConfirmSound();
         }
 
         private void HandleItemEquipped(Item item, bool active)
@@ -99,6 +102,7 @@ namespace LittleSimTest
             {
                 if (clothSocket.type == item.Type)
                 {
+                    SoundManager.Instance.PlayOnEquipSound();
                     if(active)
                         clothSocket.Equip(item);
                     else

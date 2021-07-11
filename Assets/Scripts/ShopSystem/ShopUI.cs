@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LittleSimTest.InventoryLogic;
+using LittleSimTest.SoundSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,11 +23,17 @@ namespace LittleSimTest.ShopSystem
         private void Start()
         {
             closeButton.onClick.AddListener(Close);
+            closeButton.onClick.AddListener(PlayButtonClickSound);
         }
 
         public void Init(List<Item> items)
         {
             _items = items;
+        }
+
+        private void PlayButtonClickSound()
+        {
+            SoundManager.Instance.PlayButtonClickSound();
         }
 
         public void RefreshItems()
@@ -55,12 +62,14 @@ namespace LittleSimTest.ShopSystem
         public void Open(Inventory inventory)
         {
             _interactInventory = inventory;
+            SoundManager.Instance.PlayOpenSound();
             gameObject.SetActive(true);
             RefreshItems();
         }
 
         public void Close()
         {
+            SoundManager.Instance.PlayOpenSound();
             DeleteItems();
             gameObject.SetActive(false);
         }

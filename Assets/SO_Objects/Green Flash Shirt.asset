@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
-  m_Name: green_flash_shirt
+  m_Name: Green Flash Shirt
   m_EditorClassIdentifier: 
   type: 0
   price: 10
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: -6854199788497691963, guid: 0f75194bcd890684da3695734cbf19a4, type: 3}
   animationClips:
   - {fileID: 7400000, guid: ba3973041d612d64e82a541bbb0f4650, type: 2}
   - {fileID: 7400000, guid: dff468aeff3cf5644873bf5a96e754cb, type: 2}

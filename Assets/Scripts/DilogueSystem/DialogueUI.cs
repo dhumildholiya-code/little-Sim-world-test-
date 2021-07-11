@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using LittleSimTest.SoundSystem;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -18,6 +19,7 @@ namespace LittleSimTest.DilogueSystem
         {
             continueButton.onClick.RemoveAllListeners();
             continueButton.onClick.AddListener(callback);
+            continueButton.onClick.AddListener(PlayButtonClickSound);
         }
         public void SetName(string text)
         {
@@ -27,14 +29,19 @@ namespace LittleSimTest.DilogueSystem
         private IEnumerator StartUpdatingText(string text)
         {
             sentenceText.text = "";
-            continueButton.enabled = false;
+            continueButton.gameObject.SetActive(false);
             foreach (var letter in text.ToCharArray())
             {
                 sentenceText.text += letter;
                 yield return new WaitForSeconds(0.01f);
             }
 
-            continueButton.enabled = true;
+            continueButton.gameObject.SetActive(true);
+        }
+
+        private void PlayButtonClickSound()
+        {
+            SoundManager.Instance.PlayButtonClickSound();
         }
         
         public void SetSentence(string text)

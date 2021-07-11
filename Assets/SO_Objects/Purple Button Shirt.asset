@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd15c293d09344d180ff5c50a3592cf6, type: 3}
-  m_Name: purple_button_shirt
+  m_Name: Purple Button Shirt
   m_EditorClassIdentifier: 
   type: 0
   price: 30
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 3667463680480185343, guid: 0f75194bcd890684da3695734cbf19a4, type: 3}
   animationClips:
   - {fileID: 7400000, guid: f01b5bb9cb5cfcc49961b556e7c7f6ab, type: 2}
   - {fileID: 7400000, guid: 3d3ee75a5d5703343ae2c7ef916fef56, type: 2}
