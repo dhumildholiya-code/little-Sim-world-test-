@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Fixed small issue with IsEquipped variable.">
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Fixed UI issue showing multiple cloth of same type was equipped.">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Player/Player Holder.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Player/Player Holder.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Player/demo.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Player/demo.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/PositionRendererSorter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/PositionRendererSorter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/character 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/character 1.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryLogic/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InventoryLogic/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryLogic/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InventoryLogic/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/Ground Tiles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/Ground Tiles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/Tiles/roguelikeCity_magenta_30.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/roguelikeCity_magenta_30.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,16 +28,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridPaintPaletteClipboard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/InventoryLogic/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/InventoryLogic/Inventory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ShopSystem/ShopUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/PositionRendererSorter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ClothSocket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridPaintPaletteClipboard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ClothSocket.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/InventoryLogic/Item.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ClothSocket.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ShopSystem/ShopUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PixelArtPreProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/NextGen_Studio/My prototypes/little-Sim-world-test-/Assets/Scripts/ClothSocket.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClothSocket.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -51,9 +63,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopSystem/ShopUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ClothSocket.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InventoryLogic/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopSystem/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InventoryLogic/Item.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/PositionRendererSorter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1v70NI9vslBw8r43UVKHzoYEM8J" />
@@ -106,7 +119,7 @@
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
       <workItem from="1625897910597" duration="15745000" />
-      <workItem from="1625925503900" duration="12900000" />
+      <workItem from="1625925503900" duration="13667000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -178,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625941926214</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed UI issue showing multiple cloth of same type was equipped.">
+      <created>1625943488353</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1625943488353</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +231,7 @@
     <MESSAGE value="Imported UI Assets and implemented Shop UI." />
     <MESSAGE value="Commented some of the code. Implemented Shop UI and its functionality." />
     <MESSAGE value="Fixed small issue with IsEquipped variable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed small issue with IsEquipped variable." />
+    <MESSAGE value="Fixed UI issue showing multiple cloth of same type was equipped." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed UI issue showing multiple cloth of same type was equipped." />
   </component>
 </project>

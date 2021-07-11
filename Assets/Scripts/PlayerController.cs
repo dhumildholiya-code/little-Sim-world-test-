@@ -73,7 +73,6 @@ namespace LittleSimTest
                 Collider2D col = Physics2D.OverlapCircle(_mouseWorldPosition, 0.2f, interactableLayer);
                 if (!col) return;
                 INventoryINteractable interactable = col.GetComponent<INventoryINteractable>();
-                Debug.Log(interactable.ToString());
                 interactable?.Interact(_inventory);
             }
         }

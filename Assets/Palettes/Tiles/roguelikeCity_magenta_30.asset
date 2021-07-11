@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: roguelikeCity_magenta_30
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 8583205052629422793, guid: 281959a574b10484ea3be0b495820412, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.032075405, b: 0.032075405, a: 0.35686275}
   m_Transform:
     e00: 1
     e01: 0
