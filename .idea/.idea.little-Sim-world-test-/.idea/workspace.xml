@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="Fixed issues in level design.">
+    <list default="true" id="eaf45ecc-9a08-4ea5-ac05-4007d041774e" name="Default Changelist" comment="level design issue solved">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.little-Sim-world-test-/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +133,7 @@
       <updated>1625897784099</updated>
       <workItem from="1625897792096" duration="85000" />
       <workItem from="1625897910597" duration="15745000" />
-      <workItem from="1625925503900" duration="23638000" />
+      <workItem from="1625925503900" duration="25128000" />
     </task>
     <task id="LOCAL-00001" summary="imported character animation, tilemaps sprite... Implemented Player Movement.">
       <created>1625903724454</created>
@@ -267,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625985031116</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixed issues in level design.">
+      <created>1625985350370</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1625985350370</updated>
+    </task>
+    <task id="LOCAL-00021" summary="level design issue solved">
+      <created>1625985465380</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1625985465380</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +325,7 @@
     <MESSAGE value="Created Multiple NPC with different clothes" />
     <MESSAGE value="Implemented Exit Menu" />
     <MESSAGE value="Fixed issues in level design." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issues in level design." />
+    <MESSAGE value="level design issue solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="level design issue solved" />
   </component>
 </project>
