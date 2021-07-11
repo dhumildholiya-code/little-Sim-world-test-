@@ -21,6 +21,11 @@ namespace LittleSimTest.ShopSystem
             shopUI.Init(items);
         }
 
+        public void Open(Inventory interactedInventory)
+        {
+            shopUI.Open(interactedInventory);
+        }
+
         public void Interact(Inventory interactedInventory)
         {
             shopUI.Open(interactedInventory);

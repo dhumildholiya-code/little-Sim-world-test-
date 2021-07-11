@@ -7,16 +7,18 @@ namespace LittleSimTest.DilogueSystem
 {
     public class DialogueController : MonoBehaviour
     {
+        public event Action OnEndDialogue;
+        
         public static DialogueController Instance;
         private Queue<string> _sentences;
-        private UnityAction continueAction;
+        private UnityAction _continueAction;
 
         [SerializeField] private DialogueUI dialogueUI;
 
         private void Awake()
         {
             Instance = this;
-            continueAction = DisplayNextSentence;
+            _continueAction = DisplayNextSentence;
         }
 
         private void Start()
@@ -29,8 +31,8 @@ namespace LittleSimTest.DilogueSystem
             _sentences.Clear();
             
             dialogueUI.gameObject.SetActive(true);
-            dialogueUI.SetnName(dialogue.characterName);
-            dialogueUI.HandleContinueButton(continueAction);
+            dialogueUI.SetName(dialogue.characterName);
+            dialogueUI.HandleContinueButton(_continueAction);
             
             foreach (var sentence in dialogue.sentences)    
             {
@@ -55,6 +57,7 @@ namespace LittleSimTest.DilogueSystem
         private void EndDialogue()
         {
             dialogueUI.gameObject.SetActive(false);
+            OnEndDialogue?.Invoke();
         }
     }
 }
