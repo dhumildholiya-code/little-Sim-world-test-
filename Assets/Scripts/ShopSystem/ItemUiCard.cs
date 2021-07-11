@@ -51,6 +51,7 @@ namespace LittleSimTest.ShopSystem
             if (_item == item)
             {
                 ownedText.text = _item.IsOwned ? Owned : string.Empty;
+                equipButtonText.text = Equip;
                 DisableAllActionButtons();
                 buyButton.gameObject.SetActive(true);
             }

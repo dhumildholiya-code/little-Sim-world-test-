@@ -53,6 +53,7 @@ namespace LittleSimTest.InventoryLogic
         public void Sell(Inventory inventory)
         {
             inventory.Remove(this);
+            _isEquipped = false;
             OnSellItem?.Invoke(this);
         }
 
